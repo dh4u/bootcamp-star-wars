@@ -1,4 +1,4 @@
-# NextJS Application that Calls the Star Wars API 
+# NextJS Application that uses the Star Wars API 
 
 ![](static/StarWarsAPI.1.png)
 ![](static/StarWarsAPI.2.png)
