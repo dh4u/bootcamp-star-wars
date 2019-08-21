@@ -120,7 +120,7 @@ const Index = (props) => (
                         let filmDetails =  props.data.filmDetails.sort(compare)
 
                         filmDetails.forEach(film => {
-                            rows.push(<>&nbsp;<a href={film.url} target="_blank">Episode {film.episode_id} - {film.title}</a><br /></>)
+                            rows.push(<li id={`episode${film.episode_id}`} style={{listStyleType: 'none'}}>&nbsp;<a href={film.url} target="_blank">Episode {film.episode_id} - {film.title}</a><br /></li>)
                         });
                         return rows
                     }()
@@ -138,9 +138,10 @@ We do it using an async function called getInitialProps.
 With that, we can fetch data for a given page via a remote data source and pass it as props to our page. 
 We can write our getInitialProps to work on both server and the client. So, Next.js can use it on both client and server.
 In the code below, we are fetching five random Star Wars characters and passing them into our page as the 'randomCharacters' prop. */
-Index.getInitialProps = async ({ req }) => {
+Index.getInitialProps = async (req) => {
+    
     // get the person detail. the data variable will be used as the "base" and we will add more detail to it
-    const res = await fetch(`https://swapi.co/api/people/${req.params.id}?format=json`)
+    const res = await fetch(`https://swapi.co/api/people/${req.query.id}?format=json`)
     let data = await res.json() 
     
     //console.log("**** randomCharacter ****")

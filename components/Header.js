@@ -12,8 +12,8 @@ const Header = () => (
         <Link href="/">
           <a style={linkStyle}>Home</a>
         </Link>
-        <Link href={headerlink}>
-          <a style={linkStyle}>Character Details</a>
+        <Link as={headerlink} href={`/details?id=${randomNumberHead}&format=json`}>
+          <a style={linkStyle}>Details for a Random Character</a>
         </Link>
     </div>
 )
