@@ -3,7 +3,7 @@
 ![](static/StarWarsAPI.1.png)
 ![](static/StarWarsAPI.2.png)
 
-This project was for the Full Stack Developer bootcamp I did.
+This project was for the Full Stack Developer bootcamp I did and was for a lesson on fetching data with NextJS.
 
 ## Assignment
 > * Create a new project using Next.js. This should be a dynamic website that is created using data retrieved from an API. You can use a simple API of your choice. Here are a few suggestions:
