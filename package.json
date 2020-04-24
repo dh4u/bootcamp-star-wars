@@ -14,8 +14,8 @@
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^8.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "swapi-node": "^0.4.4"
   },
   "devDependencies": {
